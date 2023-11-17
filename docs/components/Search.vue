@@ -1,15 +1,30 @@
 <template>
   <div>
-    <input
-      type="text"
-      v-model="searchQuery"
-      @input="search"
-      placeholder="Cari..."
-    />
-    <!-- <ul v-if="searchResults.length">
-        <li v-for="(result, index) in searchResults" :key="index">{{ result.title }}</li>
-      </ul>
-      <p v-else>Tidak ada hasil.</p> -->
+    <div class="search-container">
+      <div class="search-input-container">
+        <input
+          type="text"
+          v-model="searchQuery"
+          placeholder="Cari Artikel..."
+          class="search-input"
+        />
+      </div>
+
+      <button @click="search" class="search-button">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          width="24"
+          height="24"
+          class="search-icon"
+        >
+          <path fill="none" d="M0 0h24v24H0V0z" />
+          <path
+            d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 0 0 1.48-5.34c-.47-2.78-2.79-5-5.59-5.34a6.505 6.505 0 0 0-7.27 7.27c.34 2.8 2.56 5.12 5.34 5.59a6.5 6.5 0 0 0 5.34-1.48l.27.28v.79l4.25 4.25c.41.41 1.08.41 1.49 0 .41-.41.41-1.08 0-1.49L15.5 14zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+          />
+        </svg>
+      </button>
+    </div>
     <div v-for="post in searchResults" :key="post._id">
       <a :href="path + post._id">
         <div class="card">
@@ -100,5 +115,46 @@ export default {
   font-size: 0.7rem;
   color: #999;
 }
-</style>
 
+/* Gaya CSS untuk container utama */
+.search-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+/* Gaya CSS untuk container input */
+.search-input-container {
+  flex: 1; /* Membuat input mengisi sisa ruang yang tersedia */
+  position: relative;
+}
+
+/* Gaya CSS untuk input pencarian */
+.search-input {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 40px 0 0 40px;
+  margin-right: 8px;
+  width: 100%; /* Biarkan input mengisi sisa ruang yang tersedia */
+  border-right: none;
+  padding-left: 20px;
+}
+
+/* Gaya CSS untuk tombol pencarian */
+.search-button {
+  padding: 8px;
+  background-color: #f8f8f8;
+  border: 1px solid #d3d3d3;
+  border-radius: 0 40px 40px 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  width: 60px;
+}
+
+/* Gaya CSS untuk ikon dalam tombol pencarian */
+.search-icon {
+  fill: #333;
+}
+</style>

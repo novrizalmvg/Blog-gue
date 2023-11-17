@@ -25,6 +25,7 @@
         </svg>
       </button>
     </div>
+    <Loading :isLoading=isLoading />
     <div v-for="post in searchResults" :key="post._id">
       <a :href="path + post._id">
         <div class="card">
@@ -52,9 +53,14 @@
 <script>
 import axios from "axios";
 import { server } from "../utils/helper";
+import Loading from "./Loading.vue";
 export default {
+  components: {
+    Loading
+  },
   data() {
     return {
+      isLoading:false,
       searchQuery: "",
       searchResults: [],
     };
@@ -67,10 +73,12 @@ export default {
       return text;
     },
     search() {
+      this.isLoading=true;
       axios
         .get(`${server.baseURL}/blog/posts?keyword=` + this.searchQuery)
         .then((data) => {
           this.searchResults = data.data;
+          this.isLoading=false;
         });
     },
   },

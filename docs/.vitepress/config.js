@@ -8,6 +8,7 @@ export default {
         { text: 'Blog', link: '/blog' },
         { text: 'Jurnal', link: '/jurnal' },
         { text: 'Contact', link: '/contact' },
+        { text: 'Search', link: '/search' },
       ],
       footer: {
         message: "Released under the MIT License.",

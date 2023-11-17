@@ -2,9 +2,9 @@
     <div class="home">
         <div class="home-body">
             <div class="container">
-                <h1 class="title">Hey, I'm {{ name || "Novrizal" }}.</h1>
+                <h1 class="title">Hey, I'm {{ homes.name || "Novrizal" }}.</h1>
                 <p class="subtitle">
-                    {{ subtitle }}
+                    {{ homes.subtitle }}
                 </p>
             </div>
         </div>
@@ -12,18 +12,25 @@
 </template>
 
 <script>
+import axios from "axios";
+import { server } from "../utils/helper"
 export default {
-    props: {
-        name: {
-            type: String,
-            required: true,
-        },
-        subtitle: {
-            type: String,
-            required: true,
-        },
+  data() {
+    return {
+        homes: {},
+    };
+  },
+  mounted() {
+    this.fetchHome();
+  },
+  methods: {
+    fetchHome() {
+        axios.get(`${server.baseURL}/home`).then((data) => {
+            this.homes = data.data[0]
+        });
     },
-}
+  },
+};
 </script>
 
 <style>

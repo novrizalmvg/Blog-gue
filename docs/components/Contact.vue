@@ -2,11 +2,11 @@
     <div>
       <h1>Kontak Kami</h1>
       <div class="kontak-info">
-        <p><i class="fas fa-envelope"></i> Email: Novrizal@gmail.com</p>
-        <p><i class="fab fa-facebook"></i> Facebook: <a href="#">@Novrizal</a></p>
-        <p><i class="fab fa-twitter"></i> Twitter: <a href="#">@Novrizal</a></p>
-        <p><i class="fab fa-linkedin"></i> LinkedIn: <a href="#">@Novrizal</a></p>
-        <p><i class="fab fa-linkedin"></i> Whatsap: <a href="#">083822444363</a></p>
+        <p><i class="fas fa-envelope"></i> Email:{{ contact.email }}</p>
+        <p><i class="fab fa-facebook"></i> Facebook: <a href="#">{{ contact.facebook }}</a></p>
+        <p><i class="fab fa-twitter"></i> Twitter: <a href="#">{{ contact.twitter }}</a></p>
+        <p><i class="fab fa-linkedin"></i> LinkedIn: <a href="#">{{ contact.linkedin }}</a></p>
+        <p><i class="fab fa-linkedin"></i> Whatsap: <a href="#">{{ contact.whatsapp }}</a></p>
         <!-- Tambahkan informasi kontak dan tautan media sosial lain sesuai kebutuhan Anda -->
       </div>
     </div>
@@ -33,3 +33,24 @@
     }
   </style>
   
+  <script>
+  import { server } from '../utils/helper';
+  import axios from 'axios';
+  export default {
+    data() {
+      return {
+        contact: {},
+      };
+    },
+    mounted() {
+      this.fetchContact();
+    },
+    methods: {
+      fetchContact() {
+        axios.get(`${server.baseURL}/contact`).then((data) => {
+          this.contact = data.data[0];
+        })
+      }
+    }
+  }
+</script>

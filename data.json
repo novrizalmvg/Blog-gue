@@ -1,27 +1,27 @@
 [
   {
     "id": 1,
-    "Author": "Nemo",
+    "Author": "Novrizal",
     "Updated": "2022-06-01T00:00:00.000Z",
     "image": "https://images.unsplash.com/photo-1664575198263-269a022d6e14?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
-    "title": "Si pace ad caput",
+    "title": "Judul Artikel 1",
     "isi":"Keajaiban Taman Nasional",
     "path": "articles/article.html?id=1",
     "excerpt": "Taman nasional adalah tempat di mana kita dapat menikmati keindahan alam yang luar biasa. Pohon-pohon hijau, sungai-sungai yang mengalir deras, dan gunung-gunung yang menjulang tinggi adalah beberapa pemandangan yang akan Anda temui di sini. Tidak ada yang bisa menandingi keindahan alam ini. Tidak hanya itu, di taman nasional, Anda dapat menemukan berbagai jenis hewan liar yang hidup bebas. Ini adalah tempat yang sempurna untuk melihat keanekaragaman hayati yang luar biasa."
   },
   {
     "id": 2,
-    "Author": "Author 2",
+    "Author": "Novrizal",
     "Updated": "2022-06-01T00:00:00.000Z",
     "image": "https://images.unsplash.com/photo-1665129059445-b31f47edf843?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1pYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
-    "title": "Maiorque sermonibus nectare",
+    "title": "Judul Artikel 2",
     "isi": "Bersatu Alam",
     "path": "articles/article.html?id=2",
     "excerpt": "Kita sebagai manusia hidup di planet Bumi yang indah ini, sebuah tempat yang penuh dengan keajaiban alam yang menakjubkan. Hubungan antara manusia dan alam telah ada sejak awal peradaban manusia. Alam memberikan kita sumber daya, keindahan, dan kehidupan itu sendiri. Oleh karena itu, penting bagi kita untuk bersatu dengan alam dan menjaga keseimbangan yang ada."
   },
   {
     "id": 3,
-    "Author": "Penulis 3",
+    "Author": "Novrizal",
     "Updated": "2022-06-01T00:00:00.000Z",
     "image": "https://images.unsplash.com/photo-1695694751841-408db1526e11?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1pYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
     "title": "Judul Artikel 3",
@@ -32,7 +32,7 @@
   },
   {
     "id": 4,
-    "Author": "Penulis 4",
+    "Author": "Novrizal",
     "Updated": "2022-06-01T00:00:00.000Z",
     "image": "https://images.unsplash.com/photo-1682686579976-879b74d6d7ea?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1pYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
     "title": "Judul Artikel 4",
@@ -42,7 +42,7 @@
   },
   {
     "id": 5,
-    "Author": "Penulis 5",
+    "Author": "Novrizal",
     "Updated": "2022-06-01T00:00:00.000Z",
     "image": "https://images.unsplash.com/photo-1682685797828-d3b2561deef4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1pYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
     "title": "Judul Artikel 5",
@@ -52,7 +52,7 @@
   },
   {
     "id": 6,
-    "Author": "Penulis 6",
+    "Author": "Novrizal",
     "Updated": "2022-06-01T00:00:00.000Z",
     "image": "https://images.unsplash.com/photo-1698933485898-f56250a62950?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1pYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
     "title": "Judul Artikel 6",
@@ -62,7 +62,7 @@
   },
   {
     "id":7,
-    "Author": "Penulis 7",
+    "Author": "Novrizal",
     "Updated": "2022-06-01T00:00:00.000Z",
     "image": "https://images.unsplash.com/photo-1698966378323-51d7982dfd96?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1pYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
     "title": "Judul Artikel 7",
@@ -72,7 +72,7 @@
   },
   {
     "id": 8,
-    "Author": "Penulis 8",
+    "Author": "Novrizal",
     "Updated": "2022-06-01T00:00:00.000Z",
     "image": "https://images.unsplash.com/photo-1693753310466-bd53501ba2a9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1pYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
     "title": "Judul Artikel 8",
@@ -82,7 +82,7 @@
   },
   {
     "id": 9,
-    "Author": "Penulis 9",
+    "Author": "Novrizal",
     "Updated": "2022-06-01T00:00:00.000Z",
     "image": "https://images.unsplash.com/photo-1695982206757-a9643cb6cee5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1pYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
     "title": "Judul Artikel 9",
@@ -92,7 +92,7 @@
   },
   {
     "id": 10,
-    "Author": "Penulis 10",
+    "Author": "Novrizal",
     "Updated": "2022-06-01T00:00:00.000Z",
     "image": "https://images.unsplash.com/photo-1697603309921-91e3277fd05f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1pYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
     "title": "Judul Artikel 10",

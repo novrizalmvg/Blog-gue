@@ -20,16 +20,22 @@
       </div>
     </a>
   </div>
+  <Loading :isLoading=isLoading />
 </template>
 
 <script>
 import { server } from "../utils/helper";
 import axios from "axios";
+import Loading from "./Loading.vue";
 export default {
+  components: {
+    Loading
+  },
   data() {
     return {
       posts: [],
       path:"",
+      isLoading: true,
     };
   },
   mounted() {
@@ -43,8 +49,10 @@ export default {
       return text;
     },
     fetchPosts() {
-      axios.get(`${server.baseURL}/blog/posts`).then((data) => {
+
+      axios.get(`${server.baseURL}/blog/posts?keyword`).then((data) => {
         this.path = "articles/article.html?id=";
+        this.isLoading = false;
         this.posts = data.data;
       });
     },

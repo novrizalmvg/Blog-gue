@@ -10,6 +10,7 @@
         <!-- Tambahkan informasi kontak dan tautan media sosial lain sesuai kebutuhan Anda -->
       </div>
     </div>
+    <Loading :isLoading=isLoading />
   </template>
   
   <style>
@@ -36,10 +37,16 @@
   <script>
   import { server } from '../utils/helper';
   import axios from 'axios';
+  import Loading from "./Loading.vue";
   export default {
+    components: {
+      Loading
+    },
     data() {
       return {
+        isLoading: true,
         contact: {},
+        psth:"",
       };
     },
     mounted() {
@@ -47,8 +54,9 @@
     },
     methods: {
       fetchContact() {
-        axios.get(`${server.baseURL}/contact`).then((data) => {
+        axios.get(`${server.baseURL}/contact?keyword`).then((data) => {
           this.contact = data.data[0];
+          this.isLoading = false;
         })
       }
     }

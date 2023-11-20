@@ -26,7 +26,7 @@
       </button>
     </div>
     <Loading :isLoading=isLoading />
-    <div v-for="post in searchResults" :key="post._id">
+    <div v-if="!isLoading" v-for="post in searchResults" :key="post._id">
       <a :href="path + post._id">
         <div class="card">
           <div class="flex">

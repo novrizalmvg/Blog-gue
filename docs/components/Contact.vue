@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div v-if="!isLoading">
       <h1>Kontak Kami</h1>
       <div class="kontak-info">
         <p><i class="fas fa-envelope"></i> Email:{{ contact.email }}</p>

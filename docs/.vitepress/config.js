@@ -2,6 +2,9 @@
 export default {
     title: 'Novrizal',
     description: 'Just playing around.',
+    optimizeDeps: {
+      include: ['@fortawesome/fontawesome-free/css/all.css'],
+    },
     themeConfig: {
       nav: [
         { text: 'Home', link: '/' },
